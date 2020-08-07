@@ -19,4 +19,12 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="spring.MemberPrinter"/>
+<fullyQualifiedTypeName name="spring.MemberListPrinter"/>
+<fullyQualifiedTypeName name="spring.MemberInfoPrinter"/>
+<fullyQualifiedTypeName name="spring.VersionPrinter"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="config.AppConf1"/>
+<fullyQualifiedTypeName name="config.AppConf2"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
 </qualifiedTypeNameHistroy>
