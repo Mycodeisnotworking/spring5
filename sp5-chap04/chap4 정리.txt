@@ -1,0 +1,36 @@
+chap4 정리
+- 자동 주입
+ - @Autowired
+ - setter 혹은 filed에 붙이면 타입이 일치하는 빈(bean)객체를 찾아 주입.
+  => ★☆★  setter에 붙일 경우 setter를 실행하는 행이 없어도 주입 가능.  ★☆★
+  -> config/AppCtx.java , spring/MemberListPrinter.java 참조
+  => 일치하는 type이 여러 가지일 경우 Qualifier로 분류(안 써줄 경우 오류)
+
+ - @Autowired의 한정자는 필드나 파라미터 이름
+  - 단, Qualifier로 명시할 시 그 이름을 따른다
+ ex) public class MemberInfoPrinter2{
+
+	@Autowired
+	private MemberPrinter printer; //<=한정자: printer
+}
+
+ - ★★★ 한정자 ★★★
+  - 해당 Bean의 이름 으로 이해하면 될듯
+  - 한정자 보다는 고유이름 혹은 id 정도가 어울리는 이름일듯.
+
+ - super class가 있는 경우 다형성 때문에 exception 생길 수 있음
+  => Qulifier 잘 쓸것
+
+  주입 대상이 필수가 아닐 경우
+ 1. @Autowired(required = false)
+ 2. Optional(spring/MemberPrinter.java 주석 참조) 사용(spring 5 이후)
+ 3. @Nullable 사용 (주입할 빈이 없으면 null 전달)
+ - @Autowired
+    public void setDateFormatter(@Nullable DateTimeFormatter dateTimeFormatter){ ... }
+
+ 1, 3 차이점
+ - Nullable 사용 시 자동 주입 할 빈이 없어도 메서드가 호출됨. 이 때 값은 null로 주입됨.
+ - Optional의 경우 값이 없는 Optional 할당.
+
+자동 주입과 수동 주입을 함께 사용할 경우
+ -> 자동 주입을 따라감.
