@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="spring.DuplicateMemberException"/>
 <fullyQualifiedTypeName name="spring.MemberNotFoundException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 <fullyQualifiedTypeName name="spring.ChangePasswordService"/>
 <fullyQualifiedTypeName name="spring.MemberDao"/>
 <fullyQualifiedTypeName name="spring.MemberRegisterService"/>
@@ -19,12 +18,18 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="spring.MemberPrinter"/>
 <fullyQualifiedTypeName name="spring.MemberListPrinter"/>
 <fullyQualifiedTypeName name="spring.MemberInfoPrinter"/>
 <fullyQualifiedTypeName name="spring.VersionPrinter"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="config.AppConf1"/>
 <fullyQualifiedTypeName name="config.AppConf2"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="spring.MemberPrinter"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="spring.MemberSummaryPrinter"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="org.springframework.lang.Nullable"/>
 </qualifiedTypeNameHistroy>
