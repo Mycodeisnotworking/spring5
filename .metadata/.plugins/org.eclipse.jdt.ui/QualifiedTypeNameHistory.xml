@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="spring.MemberNotFoundException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="spring.ChangePasswordService"/>
-<fullyQualifiedTypeName name="spring.MemberDao"/>
 <fullyQualifiedTypeName name="spring.MemberRegisterService"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
@@ -24,12 +23,18 @@
 <fullyQualifiedTypeName name="config.AppConf1"/>
 <fullyQualifiedTypeName name="config.AppConf2"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-<fullyQualifiedTypeName name="spring.MemberPrinter"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 <fullyQualifiedTypeName name="spring.MemberSummaryPrinter"/>
 <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
 <fullyQualifiedTypeName name="org.springframework.lang.Nullable"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.FilterType"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan.Filter"/>
+<fullyQualifiedTypeName name="spring.MemberDao"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="spring.MemberPrinter"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 </qualifiedTypeNameHistroy>
