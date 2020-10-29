@@ -1,0 +1,37 @@
+ POM 정보 찾기
+ - search.maven.org
+
+ 중앙 레포지토리
+ - http://repo1.maven.org/maven2/
+
+ scope 종류
+ - compile: default.
+ - runtime: runtime에 필요한 모듈. 배포 시 포함
+ - provided : 컴파일 시 필요하지만 실제 런타임 때에는 컨테이너 등에서 기본 제공. 배포 시 제외
+ EX) servelet, JSP API 등.
+ - test: 테스트 코드 컴파일 시 필요. 테스트 시 클래스패스에 포함, 배포 시 제외.
+ EX) Mock 테트를 위한 모듈. 
+
+
+ 로컬 리포지토리 폴더명
+ [groupId]/[artifactId]/[version]
+
+메이븐 라이프 사이클
+ - clean, build(default), site
+
+default lifecycle의 주요 phase
+
+generate-sources
+ -> process-sources
+ -> generate-resources
+ -> process-resources
+ -> compile
+ -> generate-test-sources
+ -> process-test-sources
+ -> generate-test-resources
+ -> process-test-resources
+ -> test-compile
+ -> test
+ -> package
+ -> install
+ -> deploy

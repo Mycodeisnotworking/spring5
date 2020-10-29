@@ -1,0 +1,47 @@
+chap06
+
+스프링 컨테이너 라이프사이클
+
+ 컨테이너 초기화 -> 컨테이너 사용 -> 컨테이너 종료
+
+컨테이너가 관리하는 Bean 객체의 라이프 사이클
+
+ 객체 생성 -> 의존 설정 -> 초기화 -> 소멸
+
+ - 객체 생성: 빈 객체 생성
+ - 의존 설정: 의존 자동 주입을 통한 의존 설정 수행.
+ - 초기화: 빈 객체 초기화(빈 객체의 지정된 메소드 호출)
+ - 소멸: 스프링 컨테이너 종료 시 수행. 지정된 메서드 호출.
+
+ ** 빈 객체 생성 및 소멸
+ - org.springframework.beans.factory.InitializingBean
+ - org.springframework.beans.factory.DisposableBean
+ 
+ public interface InitializingBean{
+	void afterPopertiesSet() throws Exception;
+ }
+
+ public interface DisposableBean{
+	void destroy() throws Exception;
+ }
+
+Bean 객체는 설정 파일에 등록한 경우
+ -> 사용 여부와는 관계 없이 실행 시 초기화, 프로그램 종료 시 소멸
+
+
+Bean 객체 생성 / 소멸 시 커스텀 함수 사용
+
+ 빈 객체 생성 시
+ - InitializingBean 인터페이스 상속 후 afterPropertiesSet() 함수 overrdide
+ - Bean Annotation의 속성 initMethod에 메소드 등록
+
+ 빈 객체 소멸 시
+ - DisposableBean 인터페이스 상속 후 destroy() 함수 override
+ - Bean Annotation의 속성 destroyMethod에 메소드 등록
+
+
+Bean은 싱글톤 범위(Scope)를 갖는가?
+ -> 별도의 설정을 안할 경우 맞다.
+ => 프로토타입 범위를 갖는 Bean의 경우는 Singleton이 아니다. 매번 새로운 객체를 생성함.
+ ==> 프로토타입 범위를 갖는 빈은 완전한 라이프사이클을 따르지 않는다.
+  ===> 컨테이너 종료 시 Bean 객체의 소멸 메서드를 실행하지는 않음(나머진 똑같음)
