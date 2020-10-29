@@ -1,0 +1,11 @@
+package main;
+
+public class SolutionMain {
+	public static void main(String[] args) {
+		Solution s= new Solution();
+		int n=12;
+		int[] weak= {1, 5, 6, 10};
+		int[] dist= {1,2,3,4};
+		System.out.println(s.solution(n, weak, dist));
+	}
+}
